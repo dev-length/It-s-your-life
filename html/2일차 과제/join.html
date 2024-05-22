@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td:first-of-type {
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td><label for="userID">사용자 ID</label></td>
+          <td><input type="text" name="userID" id="userID" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">비밀번호</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="password_check">비밀번호 확인</label></td>
+          <td>
+            <input
+              type="password_check"
+              name="password_check"
+              id="password_check"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="username">이름</label></td>
+          <td><input type="username" name="username" id="username" /></td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <input type="radio" name="gender" id="man" value="m" />
+            <label for="man">남자</label>
+            <input type="radio" name="gender" id="woman" value="w" />
+            <label for="woman">여자</label>
+          </td>
+        </tr>
+        <tr>
+          <td>취미</td>
+          <td>
+            <input type="checkbox" name="hobby" id="soc" value="s" />
+            <label for="man">축구</label>
+            <input type="checkbox" name="hobby" id="base" value="b" />
+            <label for="woman">야구</label>
+            <input type="checkbox" name="hobby" id="vel" value="v" />
+            <label for="man">배구</label>
+            <input type="checkbox" name="hobby" id="basck" value="bs" />
+            <label for="woman">농구</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">email</label></td>
+          <td><input type="email" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>역할</td>
+          <td>
+            <select>
+              <option>ADMIN</option>
+              <option>관리자</option>
+              <option>일반회원</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="확인" />
+      <input type="reset" value="다시쓰기" />
+    </form>
+  </body>
+</html>

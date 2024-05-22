@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background-color: yellow;
+        width: 300px;
+        position: absolute;
+      }
+      table {
+        width: 100%;
+        padding: 5%;
+      }
+      tr > td:nth-child(1) {
+        width: 35%;
+      }
+      tr > td:nth-child(2) {
+        width: 65%;
+      }
+      input[type='number'],
+      input[type='text'] {
+        color: blue;
+        font-weight: bold;
+        width: 100%;
+      }
+      #content {
+        height: 100px;
+        font-size: 120%;
+        border: 0;
+      }
+      #bu_tr {
+        float: right;
+        text-align: center;
+        width: 200px;
+        height: 30px;
+        background-color: white;
+      }
+      #button {
+        float: left;
+        width: 80%;
+        height: 80%;
+        background-color: magenta;
+        color: black;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td><label for="day">오늘의 날짜</label></td>
+          <td><input type="number" name="day" id="day" /></td>
+        </tr>
+        <tr>
+          <td><label for="title">오늘의 제목</label></td>
+          <td><input type="text" name="title" id="title" /></td>
+        </tr>
+        <tr>
+          <td><label for="content">오늘의 내용</label></td>
+          <td>
+            <input type="text" name="content" id="content" />
+          </td>
+        </tr>
+      </table>
+      <div id="bu_tr">
+        <input id="button" type="button" value="파일에 일기 저장" />
+      </div>
+    </form>
+  </body>
+</html>
