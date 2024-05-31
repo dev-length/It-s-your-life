@@ -11,13 +11,14 @@ export default {
   // emits: ['nameChanged1'],
   emits: {
     nameChanged: (e) => {
+      console.log(e, '1');
       return e.name && typeof e.name === 'string' && e.name.trim().length >= 3
         ? true
         : false;
     },
   },
   data() {
-    return { name: '' };
+    return { name: '기본값' };
   },
 };
 </script>

@@ -21,6 +21,7 @@ export default {
   },
   methods: {
     nameChangedHandler(e) {
+      console.log(e, '2');
       this.parentName = e.name;
     },
   },
