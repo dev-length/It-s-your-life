@@ -3,6 +3,7 @@ import Home from '@/pages/Home.vue';
 import About from '@/pages/About.vue';
 import Members from '@/pages/Members.vue';
 import Videos from '@/pages/Videos.vue';
+import NotFound from '@/pages/NotFound.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +28,11 @@ const router = createRouter({
     {
       path: '/videos',
       component: Videos,
+    },
+    {
+      path: '/:paths(.*)*',
+      name: NotFound,
+      component: NotFound,
     },
   ],
 });
