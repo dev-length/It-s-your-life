@@ -55,7 +55,7 @@ const router = useRouter();
 // App.vue에서 provide로 가져온 함수
 const { addTodo } = inject('actions');
 // 객체는 참조형 변수기 때문에 reactive로 반응성 만들어줌
-const todoItem = reactive({ todo: '', desc: '' });
+const todoItem = reactive({ todo: '11111', desc: '' });
 
 const addTodoHandler = () => {
   let { todo } = todoItem;

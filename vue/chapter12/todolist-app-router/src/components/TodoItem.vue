@@ -1,7 +1,11 @@
 <template>
   <!-- todoItem의 done 값에 따라 클래스 이름 변경 -->
   <li
-    :class="todoItem.done ? 'list-group-item list-group-item-success' : 'list-group-item'"
+    :class="
+      todoItem.done
+        ? 'list-group-item list-group-item-success'
+        : 'list-group-item'
+    "
   >
     <span
       :class="todoItem.done ? 'todo-done pointer' : 'pointer'"

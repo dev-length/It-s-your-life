@@ -55,9 +55,14 @@ const { updateTodo } = inject('actions');
 const router = useRouter();
 const currentRoute = useRoute();
 
-const matchedTodoItem = todoList.value.find(
-  (item) => item.id === currentRoute.params.id
-);
+const matchedTodoItem = todoList.value.find((item) => {
+  console.log('Current item:', item); // item의 정보를 콘솔에 출력
+  return item.id === currentRoute.params.id;
+});
+
+// const matchedTodoItem = todoList.value.find(
+//   (item) => item.id === currentRoute.params.id
+// );
 // 업데이트할 대상을 찾지 못했을 경우 전체 목록 페이지로 돌아감
 if (!matchedTodoItem) {
   router.push('/todos');
